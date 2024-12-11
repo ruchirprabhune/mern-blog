@@ -15,7 +15,7 @@ const CreatePost=()=> {
 
   const {currentUser}=useContext(UserContext)
   const token=currentUser?.token;
-  //redirect to login page for any user who is not logges in 
+  //redirect to login page for any user who is not logged in 
   useEffect(()=>{
     if(!token){
       navigate('/login')
